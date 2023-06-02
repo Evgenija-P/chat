@@ -22,11 +22,11 @@ const Main = () => {
   };
 
   return (
-    <div>
-      <div>
-        <h1>Join</h1>
-        <form>
-          <div>
+    <div className="absolute top-1/2 left-2/4 -translate-x-1/2 -translate-y-1/2 p-4 ">
+      <div className="text-center text-white text-xl">
+        <h1 className="text-3xl mb-3">Join</h1>
+        <form className="p-8 flex flex-col gap-y-2 bg-indigo-900 rounded-xl">
+          <div className="">
             <input
               type="text"
               name="name"
@@ -35,6 +35,7 @@ const Main = () => {
               onChange={handleChange}
               autoComplete="off"
               required
+              className="text-indigo-800 rounded-lg px-2 py-1 outline-none"
             />
           </div>
           <div>
@@ -46,13 +47,19 @@ const Main = () => {
               onChange={handleChange}
               autoComplete="off"
               required
+              className="text-indigo-800 rounded-lg px-2 py-1 outline-none"
             />
           </div>
           <Link
             to={`/chat?name=${values[NAME]}&room=${values[ROOM]}`}
             onClick={handleClick}
           >
-            <button type="submit">Sing In</button>
+            <button
+              type="submit"
+              className="bg-white w-full rounded-lg text-2xl text-indigo-800 py-1 mt-2 hover:shadow-[0_5px_20px_-5px_rgba(241,232,249,0.3)] focus:shadow-[0_5px_20px_-5px_rgba(241,232,249,0.3)]"
+            >
+              Sing In
+            </button>
           </Link>
         </form>
       </div>

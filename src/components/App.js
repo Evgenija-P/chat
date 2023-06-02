@@ -2,7 +2,7 @@ import AppRoutes from './AppRoutes';
 
 function App() {
   return (
-    <div className="container">
+    <div className="bg-header bg-center bg-no-repeat bg-cover min-h-screen relative p-4">
       <AppRoutes />
     </div>
   );
