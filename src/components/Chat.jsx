@@ -58,7 +58,7 @@ const Chat = () => {
 
   return (
     <div className="">
-      <div className="absolute top-1/2 left-2/4 -translate-x-1/2 -translate-y-1/2 p-4 text-white w-full h-[600px] border border-indigo-950 flex justify-between flex-col bg-indigo-900 rounded-xl text-lg">
+      <div className="absolute top-1/2 left-2/4 -translate-x-1/2 -translate-y-1/2 p-4 text-white w-3/4 h-[600px] border border-indigo-950 flex justify-between flex-col bg-indigo-900 rounded-xl text-lg">
         <div className="flex justify-between mb-3 content-center border-b-2 border-indigo-950 pb-2">
           <div>Room: {params.room}</div>
           <div>{users} users in this room</div>
